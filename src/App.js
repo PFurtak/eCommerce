@@ -1,11 +1,14 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/homepage/Home';
 
 function App() {
   return (
     <div>
-      <Home />
+      <Switch>
+        <Route exact path='/' component={Home} />
+      </Switch>
     </div>
   );
 }
