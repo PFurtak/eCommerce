@@ -1,5 +1,6 @@
 export const CartActionTypes = {
   TOGGLE_CART_HIDE: 'TOGGLE_CART_HIDE',
   ADD_ITEM: 'ADD_ITEM',
+  DECREASE_ITEM: 'DECREASE_ITEM',
   REMOVE_ITEM: 'REMOVE_ITEM',
 };
