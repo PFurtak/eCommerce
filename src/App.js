@@ -6,6 +6,7 @@ import './App.css';
 import Home from './components/pages/homepage/Home';
 import Shop from './components/pages/shoppage/Shop';
 import Header from './components/header/Header';
+import CheckOut from './components/pages/checkout/CheckOut';
 import SignInAndSignUpPage from './components/pages/auth/SignInAndSignUp';
 import { createStructuredSelector } from 'reselect';
 import { setCurrentUser } from './redux/user/user.actions';
@@ -44,6 +45,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/shop' component={Shop} />
+          <Route exact path='/checkout' component={CheckOut} />
           <Route
             exact
             path='/signin'
