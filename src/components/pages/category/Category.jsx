@@ -8,10 +8,15 @@ import CollectionItem from '../../collection-items/CollectionItems';
 import './Category.style.scss';
 
 const CategoryPage = ({ category }) => {
-  console.log('category: ', category);
+  const { title, items } = category;
   return (
-    <div className='category'>
-      <h2>CATEGORY PAGE</h2>
+    <div className='category-page'>
+      <h2 className='title'>{title}</h2>
+      <div className='items'>
+        {items.map((item) => (
+          <CollectionItem key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   );
 };
